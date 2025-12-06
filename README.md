@@ -2,9 +2,9 @@
 
 ![Backend](https://img.shields.io/badge/Backend-SpringBoot-brightgreen)
 ![Java](https://img.shields.io/badge/Java-8+-red)
-![MySQL](https://img.shields.io/badge/Database-MySQL-blue)
 ![JPA](https://img.shields.io/badge/Spring-DataJPA-yellow) ![REST
 API](https://img.shields.io/badge/API-REST-orange)
+![MySQL](https://img.shields.io/badge/Database-MySQL-blue)
 ![Postman](https://img.shields.io/badge/API_Testing-Postman-critical)
 ![Maven](https://img.shields.io/badge/Build-Maven-purple)
 
