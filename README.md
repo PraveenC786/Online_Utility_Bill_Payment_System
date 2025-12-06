@@ -1,9 +1,10 @@
 # 🚀 Online Utility Bill Payment -- Backend (Spring Boot)
 
 ![Backend](https://img.shields.io/badge/Backend-SpringBoot-brightgreen)
-![Java](https://img.shields.io/badge/Java-8+-red)
-![JPA](https://img.shields.io/badge/Spring-DataJPA-yellow) ![REST
-API](https://img.shields.io/badge/API-REST-orange)
+![Hibernate](https://img.shields.io/badge/Hibernate-ORM-orange)
+![Java](https://img.shields.io/badge/Java-17-orange)
+![JPA](https://img.shields.io/badge/Spring-DataJPA-yellow) 
+![REST API](https://img.shields.io/badge/API-REST-orange)
 ![MySQL](https://img.shields.io/badge/Database-MySQL-blue)
 ![Postman](https://img.shields.io/badge/API_Testing-Postman-critical)
 ![Maven](https://img.shields.io/badge/Build-Maven-purple)
@@ -15,27 +16,34 @@ user accounts.
 
 ## 🎯 Objective
 
-Develop a backend for Online Utility Bill Payment System using: -
-Spring Boot\
-- MySQL\
-- Spring Data JPA\
+Develop a Backend for Online Utility Bill Payment System using: 
+- Spring Boot
+- Spring Data JPA
+- Hibernate
+- MySQL
 - REST APIs
+- Maven
+- Postman (API Testing)
 
 Users can register, view bills, and make payments.\
+
 Admins can generate bills and monitor users, bills, and payments.
 
 ------------------------------------------------------------------------
 
-## 🧰 Technologies Used
+## 🛠️ Technologies Used
 
-  Technology        Purpose
-  ----------------- -------------------
-  Java (JDK 8+)     Programming
-  Spring Boot       Backend Framework
-  Spring Data JPA   ORM
-  MySQL             Database
-  Maven             Build Tool
-  Postman           API Testing
+
+| Technology       | Purpose                                |
+|------------------|----------------------------------------|
+| Java (JDK 17+)   | Programming                            |
+| Spring Boot      | Backend Framework                      |
+| Spring Data JPA  | ORM                                    |
+| Hiberate         |ORM(Internally used by Spring Data JPA) |
+| MySQL            | Database                               |
+| Maven            | Build Tool                             |
+| Postman          | API Testing                            |
+
 
 ------------------------------------------------------------------------
 
@@ -155,7 +163,7 @@ Admins can generate bills and monitor users, bills, and payments.
 ### 1. Clone Repo
 
 ``` bash
-git clone repo-link
+git clone https://github.com/PraveenC786/Online_Utility_Bill_Payment_System.git
 ```
 
 ### 2. Create Database
@@ -181,7 +189,7 @@ Deploy on **Tomcat** and visit:
 
 ------------------------------------------------------------------------
 
-## ⭐ Author
+## 🙋‍♂️ Author
 
-Your Name\
-GitHub: your-username
+**Praveen C**\
+Java Full Stack Developer
