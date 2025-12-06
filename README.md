@@ -105,11 +105,12 @@ Admins can generate bills and monitor users, bills, and payments.
 
 ### 👤 Users (`/api/users`)
 
- | Method   Endpoint      |
- | -------- --------------|
- | POST     /register     |
- | GET      /get?id=1     |
- | GET      /all          |
+| Method | Endpoint     |
+|--------|--------------|
+| POST   | /register    |
+| GET    | /get?id=1    |
+| GET    | /all         |
+
 
 ### 📄 Bills (`/api/bills`)
 
