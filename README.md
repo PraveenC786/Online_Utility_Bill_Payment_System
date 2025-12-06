@@ -15,19 +15,11 @@ user accounts.
 ------------------------------------------------------------------------
 
 ## 🎯 Objective
+Spring Boot REST backend for enable users to pay bills online efficiently & allow admins to manage bills and track payments.
 
-Develop a Backend for Online Utility Bill Payment System using: 
-- Spring Boot
-- Spring Data JPA
-- Hibernate
-- MySQL
-- REST APIs
-- Maven
-- Postman (API Testing)
-
-Users can register, view bills, and make payments.\
-
-Admins can generate bills and monitor users, bills, and payments.
+- Built a RESTful Spring Boot backend with MySQL, Spring Data JPA
+- Users can register, view bills, and make payments.
+- Admins can generate bills and monitor users, bills, and payments.
 
 ------------------------------------------------------------------------
 
