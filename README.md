@@ -51,31 +51,31 @@ Admins can generate bills and monitor users, bills, and payments.
 
 ### 👤 User Module
 
--   Register a user\
--   View profile\
--   View user bills\
+-   Register a user
+-   View profile
+-   View user bills
 -   View payment history
 
 ### 🧾 Bill Module
 
--   Generate bill (Admin)\
--   Get bills by User ID\
--   Get bill by Bill ID\
--   Get bills by Status\
+-   Generate bill (Admin)
+-   Get bills by User ID
+-   Get bill by Bill ID
+-   Get bills by Status
 -   Filter bills (User + Status)
 
 ### 💳 Payment Module
 
--   Pay for a bill\
--   Payment details for a bill\
--   User payment list\
+-   Pay for a bill
+-   Payment details for a bill
+-   User payment list
 -   Admin: All payments
 
 ### 🛠 Admin Module
 
--   Generate bills\
--   View all users\
--   View all bills\
+-   Generate bills
+-   View all users
+-   View all bills
 -   View all payments
 
 ------------------------------------------------------------------------
@@ -84,69 +84,72 @@ Admins can generate bills and monitor users, bills, and payments.
 
 ### User
 
--   id, name, email, phone, address\
--   Role: USER / ADMIN\
+-   id, name, email, phone, address
+-   Role: USER / ADMIN
 -   One-to-many with Bills
 
 ### Bill
 
--   id, amount, dueDate, status, category\
--   Many-to-one with User\
+-   id, amount, dueDate, status, category
+-   Many-to-one with User
 -   One-to-one with Payment
 
 ### Payment
 
--   id, amountPaid, paymentDate, status\
+-   id, amountPaid, paymentDate, status
 -   One-to-one with Bill
 
 ------------------------------------------------------------------------
 
 ## 🔗 REST API Endpoints
 
-### Users (`/api/users`)
+### 👤 Users (`/api/users`)
 
-  Method   Endpoint
-  -------- -----------
-  POST     /register
-  GET      /get?id=1
-  GET      /all
+ | Method   Endpoint      |
+ | -------- --------------|
+ | POST     /register     |
+ | GET      /get?id=1     |
+ | GET      /all          |
 
-### Bills (`/api/bills`)
+### 📄 Bills (`/api/bills`)
 
-  Method   Endpoint
-  -------- ------------------------------------
-  POST     /generate?userId=1
-  GET      /byuser?userId=1
-  GET      /bystatus?status=PENDING
-  GET      /byid?billId=1
-  GET      /byuserstatus?userId=1&status=PAID
+| Method | Endpoint                           |
+|--------|-------------------------------------|
+| POST   | /generate?userId=1                  |
+| GET    | /byuser?userId=1                    |
+| GET    | /bystatus?status=PENDING            |
+| GET    | /byid?billId=1                      |
+| GET    | /byuserstatus?userId=1&status=PAID  |
 
-### Payments (`/api/payments`)
 
-  Method   Endpoint
-  -------- ------------------
-  POST     /pay?billId=1
-  GET      /byuser?userId=1
-  GET      /bybill?billId=1
-  GET      /all
+### 💰 Payments (`/api/payments`)
 
-### Admin (`/api/admin`)
+| Method | Endpoint            |
+|--------|----------------------|
+| POST   | /pay?billId=1        |
+| GET    | /byuser?userId=1     |
+| GET    | /bybill?billId=1     |
+| GET    | /all                 |
 
-  Method   Endpoint
-  -------- ------------------------
-  POST     /generatebill?userId=1
-  GET      /users
-  GET      /bills
-  GET      /payments
+
+### 🛠️ Admin (`/api/admin`)
+
+| Method | Endpoint                      |
+|--------|--------------------------------|
+| POST   | /generatebill?userId=1         |
+| GET    | /users                         |
+| GET    | /bills                         |
+| GET    | /payments                      |
+
 
 ------------------------------------------------------------------------
 
 ## ▶️ Project Flow
 
-1.  User registers → `/api/users/register`\
-2.  Admin generates bill → `/api/admin/generatebill`\
-3.  User views bills → `/api/bills/byuser`\
-4.  User pays bill → `/api/payments/pay`\
+1.  User registers → `/api/users/register`
+2.  Admin generates bill → `/api/admin/generatebill`
+3.  User views bills → `/api/bills/byuser`
+4.  User pays bill → `/api/payments/pay`
 5.  Admin monitors → `/api/admin/*`
 
 ------------------------------------------------------------------------
